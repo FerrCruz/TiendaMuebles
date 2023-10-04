@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 REM = 10px*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    /*
+    Fuente muy bonita
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+   font-size: 3rem; 
+}
+
+h1{
+    background-color: #71b93d;
+    color: #b6fe7e;
+    font-size: 5rem;
+    text-align: center;
+}
+
+h1 span{
+    color: #19612f;;
+}
+
+h2 span {
+    color: #037bc0;
+}
+
+
+nav a:nth-child(){
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.sobre-nosotros{
+    background-color: red;
+    width: 20rem;
+    padding: 2.5rem;
+}
+.contenedor-navegacion{
+    border-top: 1px solid #19612f;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nombre-sitio{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.nav-principal{    
+    /*
+    Otra manera de aplicar propiedades al border.
+
+    border-color: #000;
+    border-top-style: solid;
+    border-width: 1px;
+    */
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: #71b93d;
+}
+
+.hero{
+    background-image: url(../imgs/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;    
+    color: #000;
+    background-color: #fff;
+}
+.categoria a:hover{
+    background-color: #71b93d;
+    color: #fff;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
