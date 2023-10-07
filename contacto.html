@@ -39,7 +39,7 @@
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
 
-        <form action="">
+        <form action="" class=" formulario">
 
             <fieldset>
                 <legend>Tus Datos</legend>
@@ -64,17 +64,54 @@
                     <input id="tel" type="tel" placeholder="Tu Teléfono">
                 </div>
 
+                <div class="campo">
+                    <label for="tel">Mensaje:</label>
+                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                </div>
+
             </fieldset>
 
             <fieldset>
                 <legend>Pais</legend>
-
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select name="" id="pais">
+                        <option value="">--Seleccione--</option>
+                        <option value="">Argentina</option>
+                        <option value="">Bolivia</option>
+                        <option value="">Mexico</option>
+                        <option value="">Japón</option>
+                        <option value="">EEUU</option>
+                    </select>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Información Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo">
+                </div>
 
+                <div class="campo">
+                    <label for="provedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">                            
+                        <option value="Recamaras">
+                        <option value="Oficina">                            
+                        <option value="Television">
+                    </datalist>                    
+                </div>
             </fieldset>
+
+            <input type="submit" value="Enviar Formulario" class="btn">
 
         </form>
 
